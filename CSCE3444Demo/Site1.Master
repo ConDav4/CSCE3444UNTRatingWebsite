@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="CSCE3444Demo.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:HyperLink ID="HomeLink" runat="server" NavigateUrl="~/default.aspx">Home</asp:HyperLink>
+&nbsp;|
+                <asp:HyperLink ID="RegLink" runat="server" NavigateUrl="~/register.aspx">Register</asp:HyperLink>
+&nbsp;|
+                <asp:HyperLink ID="LoginLink" runat="server" NavigateUrl="~/login.aspx">Login</asp:HyperLink>
+&nbsp;|
+                <asp:HyperLink ID="AddProfLink" runat="server" NavigateUrl="~/addprofessor.aspx">Add Professor</asp:HyperLink>
+&nbsp;|
+                <asp:HyperLink ID="CourseProfileLink" runat="server" NavigateUrl="~/courseprofile.aspx">Course Profile</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;
+                <table style="width:100%;">
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+&nbsp;
+            </asp:ContentPlaceHolder>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </form>
+</body>
+</html>
