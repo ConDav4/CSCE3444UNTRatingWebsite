@@ -6,7 +6,7 @@
         }
         .auto-style2 {
             text-align: center;
-            height: 370px;
+            height: 280px;
         }
         .auto-style3 {
             text-align: center;

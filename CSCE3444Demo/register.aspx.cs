@@ -13,5 +13,25 @@ namespace CSCE3444Demo
         {
 
         }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+            //Wait for DB to be set up and then implement this function to register a new user
+
+            //Send to a page
+            Response.Redirect("default.aspx");
+            Session["user"] = null;
+            Session["email"] = null;
+        }
+
+        protected void btnClear_Click(object sender, EventArgs e)
+        {
+            txtPassword.Text = "";
+            txtPasswordConf.Text = "";
+            txtEmail.Text = "";
+            txtEmailConf.Text = "";
+            txtFirstName.Text = "";
+            txtLastName.Text = "";
+        }
     }
 }

@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSCE3444Demo</RootNamespace>
-    <AssemblyName>CSCE3444Demo</AssemblyName>
+    <RootNamespace>CSCE3444UNTRatingWebsite</RootNamespace>
+    <AssemblyName>CSCE3444UNTRatingWebsite</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -73,6 +73,7 @@
     <Content Include="login.aspx" />
     <Content Include="register.aspx" />
     <Content Include="StyleSheet1.css" />
+    <Content Include="success.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +119,13 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="success.aspx.cs">
+      <DependentUpon>success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="success.aspx.designer.cs">
+      <DependentUpon>success.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
