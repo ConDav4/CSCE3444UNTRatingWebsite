@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CSCE3444Demo\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|c:\\users\\conda\\source\\repos\\csce3444untratingwebsite\\csce3444demo\\coursesearch.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\coursesearch.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\courseprofile.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CSCE3444Demo\\courseprofile.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\coursesearch.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\coursesearch.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\addprofessor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CSCE3444Demo\\addprofessor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\profsearch.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\profsearch.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CSCE3444Demo\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\profsearch.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\profsearch.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CSCE3444Demo\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\addcourse.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\addcourse.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:CSCE3444Demo\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\addprofessor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\addprofessor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,76 +50,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "coursesearch.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\coursesearch.aspx.cs",
+              "RelativeDocumentMoniker": "CSCE3444Demo\\coursesearch.aspx.cs",
+              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\coursesearch.aspx.cs",
+              "RelativeToolTip": "CSCE3444Demo\\coursesearch.aspx.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwBoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T01:19:27.199Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "profsearch.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\profsearch.aspx.cs",
+              "RelativeDocumentMoniker": "CSCE3444Demo\\profsearch.aspx.cs",
+              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\profsearch.aspx.cs",
+              "RelativeToolTip": "CSCE3444Demo\\profsearch.aspx.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2026-06-30T01:19:27.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "register.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\register.aspx.cs",
+              "RelativeDocumentMoniker": "CSCE3444Demo\\register.aspx.cs",
+              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\register.aspx.cs",
+              "RelativeToolTip": "CSCE3444Demo\\register.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2026-06-30T01:19:27.205Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "profsearch.aspx",
+              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\profsearch.aspx",
+              "RelativeDocumentMoniker": "CSCE3444Demo\\profsearch.aspx",
+              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\profsearch.aspx",
+              "RelativeToolTip": "CSCE3444Demo\\profsearch.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000192|",
+              "WhenOpened": "2026-06-30T01:19:27.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "coursesearch.aspx",
+              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\coursesearch.aspx",
+              "RelativeDocumentMoniker": "CSCE3444Demo\\coursesearch.aspx",
+              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\coursesearch.aspx",
+              "RelativeToolTip": "CSCE3444Demo\\coursesearch.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000192|",
+              "WhenOpened": "2026-06-30T01:19:27.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "addcourse.aspx",
+              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\addcourse.aspx",
+              "RelativeDocumentMoniker": "CSCE3444Demo\\addcourse.aspx",
+              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\addcourse.aspx",
+              "RelativeToolTip": "CSCE3444Demo\\addcourse.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000192|",
+              "WhenOpened": "2026-06-30T01:19:27.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\login.aspx.cs",
+              "RelativeDocumentMoniker": "CSCE3444Demo\\login.aspx.cs",
+              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\login.aspx.cs",
+              "RelativeToolTip": "CSCE3444Demo\\login.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001384|",
+              "WhenOpened": "2026-06-30T01:19:27.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "register.aspx",
               "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\register.aspx",
               "RelativeDocumentMoniker": "CSCE3444Demo\\register.aspx",
               "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\register.aspx",
               "RelativeToolTip": "CSCE3444Demo\\register.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-28T20:58:41.577Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000192|",
+              "WhenOpened": "2026-06-30T01:19:27.212Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "login.aspx",
-              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\login.aspx",
-              "RelativeDocumentMoniker": "CSCE3444Demo\\login.aspx",
-              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\login.aspx",
-              "RelativeToolTip": "CSCE3444Demo\\login.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-28T20:58:31.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "default.aspx",
               "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\default.aspx",
               "RelativeDocumentMoniker": "CSCE3444Demo\\default.aspx",
               "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\default.aspx",
               "RelativeToolTip": "CSCE3444Demo\\default.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-28T20:58:26.114Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000192|",
+              "WhenOpened": "2026-06-30T01:19:27.213Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "courseprofile.aspx",
-              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\courseprofile.aspx",
-              "RelativeDocumentMoniker": "CSCE3444Demo\\courseprofile.aspx",
-              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\courseprofile.aspx",
-              "RelativeToolTip": "CSCE3444Demo\\courseprofile.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-28T20:58:06.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "addprofessor.aspx",
               "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\addprofessor.aspx",
               "RelativeDocumentMoniker": "CSCE3444Demo\\addprofessor.aspx",
               "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\addprofessor.aspx",
               "RelativeToolTip": "CSCE3444Demo\\addprofessor.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-28T20:57:45.931Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000192|",
+              "WhenOpened": "2026-06-30T01:19:27.214Z"
             }
           ]
         }

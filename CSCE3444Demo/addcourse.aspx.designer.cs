@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CSCE3444Demo
+namespace CSCE3444UNTRatingWebsite
 {
 
 
-    public partial class courseprofile
+    public partial class addcourse
     {
     }
 }

@@ -67,16 +67,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="addcourse.aspx" />
     <Content Include="addprofessor.aspx" />
-    <Content Include="courseprofile.aspx" />
+    <Content Include="coursesearch.aspx" />
     <Content Include="default.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="profsearch.aspx" />
     <Content Include="register.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="success.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addcourse.aspx.cs">
+      <DependentUpon>addcourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addcourse.aspx.designer.cs">
+      <DependentUpon>addcourse.aspx</DependentUpon>
+    </Compile>
     <Compile Include="addprofessor.aspx.cs">
       <DependentUpon>addprofessor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -84,12 +93,12 @@
     <Compile Include="addprofessor.aspx.designer.cs">
       <DependentUpon>addprofessor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="courseprofile.aspx.cs">
-      <DependentUpon>courseprofile.aspx</DependentUpon>
+    <Compile Include="coursesearch.aspx.cs">
+      <DependentUpon>coursesearch.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="courseprofile.aspx.designer.cs">
-      <DependentUpon>courseprofile.aspx</DependentUpon>
+    <Compile Include="coursesearch.aspx.designer.cs">
+      <DependentUpon>coursesearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
@@ -104,6 +113,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="profsearch.aspx.cs">
+      <DependentUpon>profsearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="profsearch.aspx.designer.cs">
+      <DependentUpon>profsearch.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="register.aspx.cs">

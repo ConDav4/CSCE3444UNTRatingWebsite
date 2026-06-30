@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace CSCE3444Demo
+namespace CSCE3444UNTRatingWebsite
 {
-    public partial class courseprofile : System.Web.UI.Page
+    public partial class addcourse : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

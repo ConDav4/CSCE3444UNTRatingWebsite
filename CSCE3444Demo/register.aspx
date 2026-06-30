@@ -21,10 +21,6 @@
 &nbsp;|
                 <asp:HyperLink ID="LoginLink" runat="server" NavigateUrl="~/login.aspx">Login</asp:HyperLink>
 &nbsp;|
-                <asp:HyperLink ID="AddProfLink" runat="server" NavigateUrl="~/addprofessor.aspx">Add Professor</asp:HyperLink>
-&nbsp;|
-                <asp:HyperLink ID="CourseProfileLink" runat="server" NavigateUrl="~/courseprofile.aspx">Course Profile</asp:HyperLink>
-&nbsp;&nbsp;&nbsp;
                 <table style="width:100%;">
                     <tr>
                         <td class="auto-style4" colspan="2">Welcome! Complete this form to register your account</td>

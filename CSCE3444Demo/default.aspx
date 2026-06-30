@@ -21,20 +21,23 @@
 &nbsp;|
     <asp:HyperLink ID="LoginLink" runat="server" NavigateUrl="~/login.aspx">Login</asp:HyperLink>
 &nbsp;|
-    <asp:HyperLink ID="AddProfLink" runat="server" NavigateUrl="~/addprofessor.aspx">Add Professor</asp:HyperLink>
-&nbsp;|
-    <asp:HyperLink ID="CourseProfileLink" runat="server" NavigateUrl="~/courseprofile.aspx">Course Profile</asp:HyperLink>
-&nbsp;&nbsp;&nbsp;
-    <table style="width:100%;">
+    &nbsp;<table style="width:100%;">
         <tr>
             <td class="auto-style3"></td>
-            <td class="auto-style3">Welcome to the UNT Professor &amp; Course Rating website</td>
+            <td class="auto-style3">Welcome to the UNTRates</td>
             <td class="auto-style3"></td>
         </tr>
         <tr>
             <td class="auto-style2"></td>
             <td class="auto-style2"></td>
             <td class="auto-style2"></td>
+        </tr>
+        <tr>
+            <td class="auto-style1">&nbsp;</td>
+            <td class="auto-style1">
+                <asp:HyperLink ID="ProfSearchLink" runat="server" NavigateUrl="~/profsearch.aspx">Professor Search</asp:HyperLink>
+            </td>
+            <td class="auto-style1">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style1">&nbsp;</td>
@@ -46,7 +49,14 @@
         <tr>
             <td class="auto-style1">&nbsp;</td>
             <td class="auto-style1">
-                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/courseprofile.aspx">Course Profile</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/courseprofile.aspx">Course Search</asp:HyperLink>
+            </td>
+            <td class="auto-style1">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style1">&nbsp;</td>
+            <td class="auto-style1">
+                <asp:HyperLink ID="HyperLink4" runat="server">Add Course</asp:HyperLink>
             </td>
             <td class="auto-style1">&nbsp;</td>
         </tr>
