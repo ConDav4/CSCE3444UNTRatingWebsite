@@ -42,14 +42,36 @@
                     <tr>
                         <td class="auto-style2">&nbsp;</td>
                         <td class="auto-style3" style="text-align: center">
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Professors] WHERE [ProfessorID] = ?" InsertCommand="INSERT INTO [Professors] ([ProfessorID], [ProfessorName], [Department], [Rating]) VALUES (?, ?, ?, ?)" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Professors]" UpdateCommand="UPDATE [Professors] SET [ProfessorName] = ?, [Department] = ?, [Rating] = ? WHERE [ProfessorID] = ?" OnSelecting="SqlDataSource1_Selecting">
+                                <DeleteParameters>
+                                    <asp:Parameter Name="ProfessorID" Type="Int32" />
+                                </DeleteParameters>
+                                <InsertParameters>
+                                    <asp:Parameter Name="ProfessorID" Type="Int32" />
+                                    <asp:Parameter Name="ProfessorName" Type="String" />
+                                    <asp:Parameter Name="Department" Type="String" />
+                                    <asp:Parameter Name="Rating" Type="Double" />
+                                </InsertParameters>
+                                <UpdateParameters>
+                                    <asp:Parameter Name="ProfessorName" Type="String" />
+                                    <asp:Parameter Name="Department" Type="String" />
+                                    <asp:Parameter Name="Rating" Type="Double" />
+                                    <asp:Parameter Name="ProfessorID" Type="Int32" />
+                                </UpdateParameters>
+                            </asp:SqlDataSource>
                         </td>
                         <td class="auto-style2">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style2">&nbsp;</td>
                         <td class="auto-style3" style="text-align: center">
-                            <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" Width="1115px">
+                            <asp:GridView ID="ProfessorGrid" runat="server" DataSourceID="SqlDataSource1" Width="1115px" AutoGenerateColumns="False" DataKeyNames="ProfessorID">
+                                <Columns>
+                                    <asp:BoundField DataField="ProfessorID" HeaderText="ProfessorID" InsertVisible="False" ReadOnly="True" SortExpression="ProfessorID" />
+                                    <asp:BoundField DataField="ProfessorName" HeaderText="ProfessorName" SortExpression="ProfessorName" />
+                                    <asp:BoundField DataField="Department" HeaderText="Department" SortExpression="Department" />
+                                    <asp:BoundField DataField="Rating" HeaderText="Rating" SortExpression="Rating" />
+                                </Columns>
                             </asp:GridView>
                         </td>
                         <td class="auto-style2">&nbsp;</td>

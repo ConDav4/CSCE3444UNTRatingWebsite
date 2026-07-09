@@ -19,9 +19,13 @@ namespace CSCE3444UNTRatingWebsite
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            string search = txtSearch.Text;
+            
+            
+        }
 
-            //sql connection to db
+        protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
         }
     }
 }

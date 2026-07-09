@@ -43,14 +43,36 @@
                     <tr>
                         <td class="auto-style2">&nbsp;</td>
                         <td class="auto-style3">
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Courses] WHERE [CourseID] = ?" InsertCommand="INSERT INTO [Courses] ([CourseID], [CourseCode], [CourseName], [Department]) VALUES (?, ?, ?, ?)" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Courses]" UpdateCommand="UPDATE [Courses] SET [CourseCode] = ?, [CourseName] = ?, [Department] = ? WHERE [CourseID] = ?" OnSelecting="SqlDataSource1_Selecting">
+                                <DeleteParameters>
+                                    <asp:Parameter Name="CourseID" Type="Int32" />
+                                </DeleteParameters>
+                                <InsertParameters>
+                                    <asp:Parameter Name="CourseID" Type="Int32" />
+                                    <asp:Parameter Name="CourseCode" Type="String" />
+                                    <asp:Parameter Name="CourseName" Type="String" />
+                                    <asp:Parameter Name="Department" Type="String" />
+                                </InsertParameters>
+                                <UpdateParameters>
+                                    <asp:Parameter Name="CourseCode" Type="String" />
+                                    <asp:Parameter Name="CourseName" Type="String" />
+                                    <asp:Parameter Name="Department" Type="String" />
+                                    <asp:Parameter Name="CourseID" Type="Int32" />
+                                </UpdateParameters>
+                            </asp:SqlDataSource>
                         </td>
                         <td class="auto-style2">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style2">&nbsp;</td>
                         <td class="auto-style3">
-                            <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" Width="1115px">
+                            <asp:GridView ID="CourseGrid" runat="server" DataSourceID="SqlDataSource1" Width="1115px" AutoGenerateColumns="False" DataKeyNames="CourseID">
+                                <Columns>
+                                    <asp:BoundField DataField="CourseID" HeaderText="CourseID" InsertVisible="False" ReadOnly="True" SortExpression="CourseID" />
+                                    <asp:BoundField DataField="CourseCode" HeaderText="CourseCode" SortExpression="CourseCode" />
+                                    <asp:BoundField DataField="CourseName" HeaderText="CourseName" SortExpression="CourseName" />
+                                    <asp:BoundField DataField="Department" HeaderText="Department" SortExpression="Department" />
+                                </Columns>
                             </asp:GridView>
                         </td>
                         <td class="auto-style2">&nbsp;</td>

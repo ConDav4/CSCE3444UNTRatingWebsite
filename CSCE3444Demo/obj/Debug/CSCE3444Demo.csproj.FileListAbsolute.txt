@@ -57,9 +57,6 @@ C:\Users\conda\source\repos\CSCE3444Demo\CSCE3444Demo\obj\Debug\CSCE3444Demo.csp
 C:\Users\conda\source\repos\CSCE3444Demo\CSCE3444Demo\obj\Debug\CSCE3444.45F90A1B.Up2Date
 C:\Users\conda\source\repos\CSCE3444Demo\CSCE3444Demo\obj\Debug\CSCE3444Demo.dll
 C:\Users\conda\source\repos\CSCE3444Demo\CSCE3444Demo\obj\Debug\CSCE3444Demo.pdb
-C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\bin\CSCE3444Demo.dll.config
-C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\bin\CSCE3444Demo.dll
-C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\bin\CSCE3444Demo.pdb
 C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\bin\roslyn\csc.exe
 C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\bin\roslyn\csc.exe.config
 C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\bin\roslyn\csc.rsp
@@ -114,5 +111,8 @@ C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\bin\Microsoft.
 C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\obj\Debug\CSCE3444Demo.csproj.AssemblyReference.cache
 C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\obj\Debug\CSCE3444Demo.csproj.CoreCompileInputs.cache
 C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\obj\Debug\CSCE3444.45F90A1B.Up2Date
-C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\obj\Debug\CSCE3444Demo.dll
-C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\obj\Debug\CSCE3444Demo.pdb
+C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\bin\CSCE3444UNTRatingWebsite.dll.config
+C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\bin\CSCE3444UNTRatingWebsite.dll
+C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\bin\CSCE3444UNTRatingWebsite.pdb
+C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\obj\Debug\CSCE3444UNTRatingWebsite.dll
+C:\Users\conda\source\repos\CSCE3444UNTRatingWebsite\CSCE3444Demo\obj\Debug\CSCE3444UNTRatingWebsite.pdb

@@ -60,7 +60,25 @@
                     </tr>
                     <tr>
                         <td class="auto-style3">
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Users] WHERE [UserID] = ?" InsertCommand="INSERT INTO [Users] ([UserID], [Email], [Password], [FirstName], [LastName]) VALUES (?, ?, ?, ?, ?)" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Users]" UpdateCommand="UPDATE [Users] SET [Email] = ?, [Password] = ?, [FirstName] = ?, [LastName] = ? WHERE [UserID] = ?" OnSelecting="SqlDataSource1_Selecting">
+                                <DeleteParameters>
+                                    <asp:Parameter Name="UserID" Type="Int32" />
+                                </DeleteParameters>
+                                <InsertParameters>
+                                    <asp:Parameter Name="UserID" Type="Int32" />
+                                    <asp:Parameter Name="Email" Type="String" />
+                                    <asp:Parameter Name="Password" Type="String" />
+                                    <asp:Parameter Name="FirstName" Type="String" />
+                                    <asp:Parameter Name="LastName" Type="String" />
+                                </InsertParameters>
+                                <UpdateParameters>
+                                    <asp:Parameter Name="Email" Type="String" />
+                                    <asp:Parameter Name="Password" Type="String" />
+                                    <asp:Parameter Name="FirstName" Type="String" />
+                                    <asp:Parameter Name="LastName" Type="String" />
+                                    <asp:Parameter Name="UserID" Type="Int32" />
+                                </UpdateParameters>
+                            </asp:SqlDataSource>
                         </td>
                         <td class="auto-style4">&nbsp;</td>
                     </tr>

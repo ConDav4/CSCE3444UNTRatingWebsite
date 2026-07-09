@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.Sql;
-using System.Data.SqlClient;
+using System.Data.OleDb;
 
 namespace CSCE3444Demo
 {
@@ -19,22 +19,27 @@ namespace CSCE3444Demo
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            //declare variable for credentials, temporary admin user only while waiting for DB to be set up
-            string sUID = "admin";
-            string sPass = "password";
-            string sUser = "admin";
+            string email = txtEmail.Text;
+            string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\untrates.accdb";
 
-            //gather query results from DB and compare with user input
-
-            if (txtEmail.Text == sUID && txtPassword.Text == sPass)
+            using(OleDbConnection conn = new OleDbConnection(connectionString))
             {
-                Session["user"] = sUser;
-                Session["email"] = sUID;
-                Response.Redirect("success.aspx");
-            }
-            else
-            {
-                lblMsg.Text = "Invalid email or password.";
+                string query = "SELECT Email, Password FROM Users WHERE Email = ?";
+                OleDbCommand cmd = new OleDbCommand(query, conn);
+                cmd.Parameters.AddWithValue("@Email", email);
+                conn.Open();
+                OleDbDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    // User exists, redirect to the next page
+                    Response.Redirect("welcome.aspx");
+                }
+                else
+                {
+                    // User does not exist, show error message
+                    lblMsg.Text = "Invalid email or password.";
+                }
+                conn.Close();
             }
         }
 
@@ -42,6 +47,11 @@ namespace CSCE3444Demo
         {
             txtPassword.Text = "";
             txtEmail.Text = "";
+        }
+
+        protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
         }
     }
 }

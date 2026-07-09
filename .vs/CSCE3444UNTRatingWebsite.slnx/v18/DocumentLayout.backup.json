@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +18,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "register.aspx",
+              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\register.aspx",
+              "RelativeDocumentMoniker": "CSCE3444Demo\\register.aspx",
+              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\register.aspx",
+              "RelativeToolTip": "CSCE3444Demo\\register.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-30T04:29:37.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "default.aspx",
+              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\default.aspx",
+              "RelativeDocumentMoniker": "CSCE3444Demo\\default.aspx",
+              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\default.aspx",
+              "RelativeToolTip": "CSCE3444Demo\\default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-06-30T01:19:27.213Z",
+              "EditorCaption": ""
             }
           ]
         }
