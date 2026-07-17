@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|c:\\users\\conda\\source\\repos\\csce3444untratingwebsite\\csce3444demo\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,20 +34,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "register.aspx.cs",
               "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\register.aspx.cs",
               "RelativeDocumentMoniker": "CSCE3444Demo\\register.aspx.cs",
               "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\register.aspx.cs",
               "RelativeToolTip": "CSCE3444Demo\\register.aspx.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAFcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-07-09T22:50:56.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "register.aspx",
               "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\register.aspx",
               "RelativeDocumentMoniker": "CSCE3444Demo\\register.aspx",
@@ -55,8 +55,7 @@
               "RelativeToolTip": "CSCE3444Demo\\register.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-30T04:29:37.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T04:29:37.36Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "CSCE3444Demo\\default.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-06-30T01:19:27.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T01:19:27.213Z"
             }
           ]
         }

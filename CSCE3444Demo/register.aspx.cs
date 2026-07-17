@@ -25,38 +25,49 @@ namespace CSCE3444Demo
             string password = txtPassword.Text;
             string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\untrates.accdb";
 
-            using(OleDbConnection conn = new OleDbConnection(connectionString))
-            {
-                //check if user already exists
-                string checkQuery = "SELECT COUNT(*) FROM Users WHERE Email = ?";
-                OleDbCommand checkCmd = new OleDbCommand(checkQuery, conn);
-                checkCmd.Parameters.AddWithValue("@Email", email);
-                conn.Open();
-                int exists = (int)checkCmd.ExecuteScalar();
-                if (exists > 0)
-                {
-                    lblMsg.Text = "Email already exists.";
-                    return;
-                }
 
-                //insert new user
-                string query = "INSERT INTO Users (FirstName, LastName, Email, Password) VALUES (?, ?, ?, ?)";
-                using (OleDbCommand cmd = new OleDbCommand(query, conn))
+            try
+            {
+                using (OleDbConnection conn = new OleDbConnection(connectionString))
                 {
-                    cmd.Parameters.AddWithValue("@FirstName", firstName);
-                    cmd.Parameters.AddWithValue("@LastName", lastName);
-                    cmd.Parameters.AddWithValue("@Email", email);
-                    cmd.Parameters.AddWithValue("@Password", password);
-                    int accExists = Convert.ToInt32(checkCmd.ExecuteScalar());
-                    if (accExists > 0)
-                    { 
-                        lblMsg.Text = "Registration failed. Please try again.";
+                    //check if user already exists
+                    string checkQuery = "SELECT COUNT(*) FROM Users WHERE Email = ?";
+                    OleDbCommand checkCmd = new OleDbCommand(checkQuery, conn);
+                    checkCmd.Parameters.AddWithValue("@Email", email);
+                    conn.Open();
+                    int exists = (int)checkCmd.ExecuteScalar();
+                    if (exists > 0)
+                    {
+                        lblMsg.Text = "Email already exists.";
+                        return;
+                    }
+
+                    //insert new user
+                    string query = "INSERT INTO Users (FirstName, LastName, Email, [Password]) VALUES (?, ?, ?, ?)";
+                    using (OleDbCommand cmd = new OleDbCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@FirstName", firstName);
+                        cmd.Parameters.AddWithValue("@LastName", lastName);
+                        cmd.Parameters.AddWithValue("@Email", email);
+                        cmd.Parameters.AddWithValue("@Password", password);
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            lblMsg.Text = "Registration successful!";
+                        }
+                        else
+                        {
+                            lblMsg.Text = "Registration failed. Please try again.";
+                            return;
+                        }
                     }
                 }
             }
+            catch (Exception ex)
+            { 
+                lblMsg.Text = "Error: " + ex.Message;
+            }
 
-            //Send to a page
-            Response.Redirect("default.aspx");
             Session["user"] = null;
             Session["email"] = null;
         }
