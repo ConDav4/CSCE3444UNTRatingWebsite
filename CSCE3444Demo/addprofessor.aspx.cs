@@ -23,25 +23,32 @@ namespace CSCE3444Demo
             string name = txtProfName.Text;
             string dpt = txtDpt.Text;
 
-            using(OleDbConnection conn = new OleDbConnection(connectionString))
+            try
             {
-                string query = "INSERT INTO Professors (Name, Department) VALUES (?, ?)";
-                OleDbCommand cmd = new OleDbCommand(query, conn);
-                cmd.Parameters.AddWithValue("@name", name);
-                cmd.Parameters.AddWithValue("@dpt", dpt);
-                conn.Open();
-                int rows = cmd.ExecuteNonQuery();
-
-                if (rows > 0)
+                using (OleDbConnection conn = new OleDbConnection(connectionString))
                 {
-                    lblMsg.Text = "Professor added successfully!";
-                }
-                else
-                {
-                    lblMsg.Text = "Error adding professor.";
-                }
+                    string query = "INSERT INTO Professors (ProfessorName, Department) VALUES (?, ?)";
+                    OleDbCommand cmd = new OleDbCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@name", name);
+                    cmd.Parameters.AddWithValue("@dpt", dpt);
+                    conn.Open();
+                    int rows = cmd.ExecuteNonQuery();
 
-                conn.Close();
+                    if (rows > 0)
+                    {
+                        lblMsg.Text = "Professor added successfully!";
+                    }
+                    else
+                    {
+                        lblMsg.Text = "Error adding professor.";
+                    }
+
+                    conn.Close();
+                }
+            }
+            catch (Exception ex)
+            {
+                lblMsg.Text = "Error: " + ex.Message;
             }
         }
 

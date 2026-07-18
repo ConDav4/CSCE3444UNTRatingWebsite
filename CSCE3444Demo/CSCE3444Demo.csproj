@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="addcourse.aspx" />
     <Content Include="addprofessor.aspx" />
+    <Content Include="courseprofile.aspx" />
     <Content Include="coursesearch.aspx" />
     <Content Include="default.aspx" />
     <Content Include="login.aspx" />
@@ -92,6 +93,13 @@
     </Compile>
     <Compile Include="addprofessor.aspx.designer.cs">
       <DependentUpon>addprofessor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="courseprofile.aspx.cs">
+      <DependentUpon>courseprofile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="courseprofile.aspx.designer.cs">
+      <DependentUpon>courseprofile.aspx</DependentUpon>
     </Compile>
     <Compile Include="coursesearch.aspx.cs">
       <DependentUpon>coursesearch.aspx</DependentUpon>

@@ -32,7 +32,7 @@ namespace CSCE3444Demo
                 if (reader.HasRows)
                 {
                     // User exists, redirect to the next page
-                    Response.Redirect("welcome.aspx");
+                    Response.Redirect("default.aspx");
                 }
                 else
                 {
