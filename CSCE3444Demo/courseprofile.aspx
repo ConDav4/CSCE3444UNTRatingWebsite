@@ -43,30 +43,37 @@
                     <tr>
                         <td>&nbsp;</td>
                         <td class="auto-style1">
-                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="CourseID" DataSourceID="SqlDataSource1">
+                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="RatingID" DataSourceID="SqlDataSource1" AllowSorting="True">
                                 <Columns>
-                                    <asp:BoundField DataField="CourseID" HeaderText="CourseID" InsertVisible="False" ReadOnly="True" SortExpression="CourseID" />
-                                    <asp:BoundField DataField="CourseCode" HeaderText="CourseCode" SortExpression="CourseCode" />
-                                    <asp:BoundField DataField="CourseName" HeaderText="CourseName" SortExpression="CourseName" />
-                                    <asp:BoundField DataField="Department" HeaderText="Department" SortExpression="Department" />
+                                    <asp:BoundField DataField="UserID" HeaderText="UserID" SortExpression="UserID" />
+                                    <asp:BoundField DataField="CourseID" HeaderText="CourseID" SortExpression="CourseID" />
+                                    <asp:BoundField DataField="Score" HeaderText="Score" SortExpression="Score" />
+                                    <asp:BoundField DataField="Comment" HeaderText="Comment" SortExpression="Comment" />
+                                    <asp:BoundField DataField="DatePosted" HeaderText="DatePosted" SortExpression="DatePosted" />
                                 </Columns>
                             </asp:GridView>
                             <asp:Label ID="lblMsg" runat="server"></asp:Label>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Courses] WHERE [CourseID] = ?" InsertCommand="INSERT INTO [Courses] ([CourseID], [CourseCode], [CourseName], [Department]) VALUES (?, ?, ?, ?)" OnSelecting="SqlDataSource1_Selecting" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Courses]" UpdateCommand="UPDATE [Courses] SET [CourseCode] = ?, [CourseName] = ?, [Department] = ? WHERE [CourseID] = ?">
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Ratings] WHERE [RatingID] = ?" InsertCommand="INSERT INTO [Ratings] ([RatingID], [ProfessorID], [UserID], [CourseID], [Score], [Comment], [DatePosted]) VALUES (?, ?, ?, ?, ?, ?, ?)" OnSelecting="SqlDataSource1_Selecting" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Ratings]" UpdateCommand="UPDATE [Ratings] SET [ProfessorID] = ?, [UserID] = ?, [CourseID] = ?, [Score] = ?, [Comment] = ?, [DatePosted] = ? WHERE [RatingID] = ?">
                                 <DeleteParameters>
-                                    <asp:Parameter Name="CourseID" Type="Int32" />
+                                    <asp:Parameter Name="RatingID" Type="Int32" />
                                 </DeleteParameters>
                                 <InsertParameters>
+                                    <asp:Parameter Name="RatingID" Type="Int32" />
+                                    <asp:Parameter Name="ProfessorID" Type="Int32" />
+                                    <asp:Parameter Name="UserID" Type="Int32" />
                                     <asp:Parameter Name="CourseID" Type="Int32" />
-                                    <asp:Parameter Name="CourseCode" Type="String" />
-                                    <asp:Parameter Name="CourseName" Type="String" />
-                                    <asp:Parameter Name="Department" Type="String" />
+                                    <asp:Parameter Name="Score" Type="Int32" />
+                                    <asp:Parameter Name="Comment" Type="String" />
+                                    <asp:Parameter Name="DatePosted" Type="DateTime" />
                                 </InsertParameters>
                                 <UpdateParameters>
-                                    <asp:Parameter Name="CourseCode" Type="String" />
-                                    <asp:Parameter Name="CourseName" Type="String" />
-                                    <asp:Parameter Name="Department" Type="String" />
+                                    <asp:Parameter Name="ProfessorID" Type="Int32" />
+                                    <asp:Parameter Name="UserID" Type="Int32" />
                                     <asp:Parameter Name="CourseID" Type="Int32" />
+                                    <asp:Parameter Name="Score" Type="Int32" />
+                                    <asp:Parameter Name="Comment" Type="String" />
+                                    <asp:Parameter Name="DatePosted" Type="DateTime" />
+                                    <asp:Parameter Name="RatingID" Type="Int32" />
                                 </UpdateParameters>
                             </asp:SqlDataSource>
                         </td>

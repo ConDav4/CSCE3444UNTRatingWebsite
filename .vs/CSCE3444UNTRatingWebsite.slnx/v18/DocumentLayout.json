@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|c:\\users\\conda\\source\\repos\\csce3444untratingwebsite\\csce3444demo\\courseprofile.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\courseprofile.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|c:\\users\\conda\\source\\repos\\csce3444untratingwebsite\\csce3444demo\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|c:\\users\\conda\\source\\repos\\csce3444untratingwebsite\\csce3444demo\\courseprofile.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\courseprofile.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|c:\\users\\conda\\source\\repos\\csce3444untratingwebsite\\csce3444demo\\addprofessor.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\addprofessor.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|c:\\users\\conda\\source\\repos\\csce3444untratingwebsite\\csce3444demo\\addprofessor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\addprofessor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|c:\\users\\conda\\source\\repos\\csce3444untratingwebsite\\csce3444demo\\coursesearch.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\coursesearch.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|c:\\users\\conda\\source\\repos\\csce3444untratingwebsite\\csce3444demo\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|c:\\users\\conda\\source\\repos\\csce3444untratingwebsite\\csce3444demo\\courseprofile.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\courseprofile.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\csce3444demo\\courseprofile.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87EBFE4F-2AB6-48E5-A5DA-AD362FEE546C}|CSCE3444Demo\\CSCE3444Demo.csproj|solutionrelative:csce3444demo\\courseprofile.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +42,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "register.aspx",
+              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\register.aspx",
+              "RelativeDocumentMoniker": "CSCE3444Demo\\register.aspx",
+              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\register.aspx",
+              "RelativeToolTip": "CSCE3444Demo\\register.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-20T04:31:23.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "login.aspx",
+              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\login.aspx",
+              "RelativeDocumentMoniker": "CSCE3444Demo\\login.aspx",
+              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\login.aspx",
+              "RelativeToolTip": "CSCE3444Demo\\login.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-07-20T04:29:54.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "courseprofile.aspx.cs",
               "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\courseprofile.aspx.cs",
               "RelativeDocumentMoniker": "CSCE3444Demo\\courseprofile.aspx.cs",
@@ -59,7 +81,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "courseprofile.aspx",
               "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\courseprofile.aspx",
               "RelativeDocumentMoniker": "CSCE3444Demo\\courseprofile.aspx",
@@ -73,45 +95,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "addprofessor.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\addprofessor.aspx.cs",
-              "RelativeDocumentMoniker": "CSCE3444Demo\\addprofessor.aspx.cs",
-              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\addprofessor.aspx.cs",
-              "RelativeToolTip": "CSCE3444Demo\\addprofessor.aspx.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAYwB0AAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T23:11:32.154Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "addprofessor.aspx",
-              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\addprofessor.aspx",
-              "RelativeDocumentMoniker": "CSCE3444Demo\\addprofessor.aspx",
-              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\addprofessor.aspx",
-              "RelativeToolTip": "CSCE3444Demo\\addprofessor.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-07-17T23:11:20.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "coursesearch.aspx",
-              "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\coursesearch.aspx",
-              "RelativeDocumentMoniker": "CSCE3444Demo\\coursesearch.aspx",
-              "ToolTip": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\coursesearch.aspx",
-              "RelativeToolTip": "CSCE3444Demo\\coursesearch.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2026-07-17T23:11:02.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "default.aspx",
               "DocumentMoniker": "C:\\Users\\conda\\source\\repos\\CSCE3444UNTRatingWebsite\\CSCE3444Demo\\default.aspx",
               "RelativeDocumentMoniker": "CSCE3444Demo\\default.aspx",

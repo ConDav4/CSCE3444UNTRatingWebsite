@@ -42,7 +42,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style3">Password:</td>
-                        <td class="auto-style1">&nbsp;<asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+                        <td class="auto-style1">&nbsp;<asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
 &nbsp;<asp:RequiredFieldValidator ID="rfvPassword" runat="server" ControlToValidate="txtPassword" ErrorMessage="RequiredFieldValidator">Password is required</asp:RequiredFieldValidator>
                         </td>
                         <td>&nbsp;</td>
@@ -50,7 +50,7 @@
                     <tr>
                         <td class="auto-style3">Confirm Password: </td>
                         <td class="auto-style1">
-                            <asp:TextBox ID="txtPasswordConf" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtPasswordConf" runat="server" TextMode="Password"></asp:TextBox>
 &nbsp;<asp:CompareValidator ID="cvPassword" runat="server" ControlToCompare="txtPassword" ControlToValidate="txtPasswordConf" ErrorMessage="CompareValidator">Passwords must match</asp:CompareValidator>
                         </td>
                         <td>&nbsp;</td>
