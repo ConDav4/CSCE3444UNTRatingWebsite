@@ -27,7 +27,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style3">Email:</td>
-                        <td class="auto-style1">&nbsp;<asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                        <td class="auto-style1"><asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
 &nbsp;<asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="RequiredFieldValidator">Email is required</asp:RequiredFieldValidator>
                         </td>
                         <td>&nbsp;</td>
@@ -42,7 +42,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style3">Password:</td>
-                        <td class="auto-style1">&nbsp;<asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+                        <td class="auto-style1"><asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
 &nbsp;<asp:RequiredFieldValidator ID="rfvPassword" runat="server" ControlToValidate="txtPassword" ErrorMessage="RequiredFieldValidator">Password is required</asp:RequiredFieldValidator>
                         </td>
                         <td>&nbsp;</td>
@@ -65,7 +65,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style3">Last Name:</td>
-                        <td class="auto-style1">&nbsp;<asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
+                        <td class="auto-style1"><asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
 &nbsp;<asp:RequiredFieldValidator ID="rfvLastName" runat="server" ControlToValidate="txtLastName" ErrorMessage="RequiredFieldValidator">Last Name is required</asp:RequiredFieldValidator>
                         </td>
                         <td>&nbsp;</td>

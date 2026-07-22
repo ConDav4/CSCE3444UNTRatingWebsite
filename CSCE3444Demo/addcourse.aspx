@@ -4,6 +4,16 @@
         .auto-style1 {
             text-align: center;
         }
+        .auto-style3 {
+            width: 533px;
+        }
+        .auto-style4 {
+            width: 533px;
+            text-align: right;
+        }
+        .auto-style5 {
+            text-align: left;
+        }
     </style>
 </asp:Content>
 
@@ -16,49 +26,46 @@
 &nbsp;|&nbsp;&nbsp;&nbsp;
                 <table style="width:100%;">
                     <tr>
-                        <td>&nbsp;</td>
-                        <td class="auto-style1">Add a Course using the fields below</td>
+                        <td class="auto-style1" colspan="2">Add a Course using the fields below</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
+                        <td class="auto-style3">&nbsp;</td>
                         <td class="auto-style1">&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td class="auto-style1">Course Name:&nbsp;
+                        <td class="auto-style4">Course Name:</td>
+                        <td class="auto-style5">
                             <asp:TextBox ID="txtCourseName" runat="server"></asp:TextBox>
 &nbsp;<asp:RequiredFieldValidator ID="rfvCourseName" runat="server" ControlToValidate="txtCourseName" ErrorMessage="Course Name is required"></asp:RequiredFieldValidator>
                         </td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td class="auto-style1">Course Code:
-                            <asp:TextBox ID="txtCourseCode" runat="server"></asp:TextBox>
+                        <td class="auto-style4">Course Code:</td>
+                        <td class="auto-style5">&nbsp;<asp:TextBox ID="txtCourseCode" runat="server"></asp:TextBox>
 &nbsp;<asp:RequiredFieldValidator ID="rfvCourseCode" runat="server" ControlToValidate="txtCourseCode" ErrorMessage="Course Code is required"></asp:RequiredFieldValidator>
                         </td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td class="auto-style1">Department:
-                            <asp:TextBox ID="txtDpt" runat="server"></asp:TextBox>
+                        <td class="auto-style4">Department:</td>
+                        <td class="auto-style5">&nbsp;<asp:TextBox ID="txtDpt" runat="server"></asp:TextBox>
 &nbsp;<asp:RequiredFieldValidator ID="rfvDpt" runat="server" ErrorMessage="Department is required"></asp:RequiredFieldValidator>
                         </td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td class="auto-style1">
+                        <td class="auto-style3">&nbsp;</td>
+                        <td class="auto-style5">
                             <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
                         &nbsp;<asp:Label ID="lblMsg" runat="server"></asp:Label>
                         </td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
+                        <td class="auto-style3">&nbsp;</td>
                         <td class="auto-style1">
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Courses] WHERE [CourseID] = ?" InsertCommand="INSERT INTO [Courses] ([CourseID], [CourseCode], [CourseName], [Department]) VALUES (?, ?, ?, ?)" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Courses]" UpdateCommand="UPDATE [Courses] SET [CourseCode] = ?, [CourseName] = ?, [Department] = ? WHERE [CourseID] = ?" OnSelecting="SqlDataSource1_Selecting">
                                 <DeleteParameters>

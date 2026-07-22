@@ -39,7 +39,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style3">Email:</td>
-                        <td class="auto-style4">&nbsp;<asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                        <td class="auto-style4"><asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
 &nbsp;<asp:RequiredFieldValidator ID="rvfEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required"></asp:RequiredFieldValidator>
                         </td>
                     </tr>

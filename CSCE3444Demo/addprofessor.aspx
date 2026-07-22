@@ -2,7 +2,23 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
-            text-align: center;
+            text-align: left;
+        }
+        .auto-style2 {
+        }
+        .auto-style3 {
+            height: 26px;
+        }
+        .auto-style4 {
+            height: 26px;
+            width: 519px;
+        }
+        .auto-style5 {
+            width: 519px;
+        }
+        .auto-style6 {
+            width: 519px;
+            text-align: right;
         }
     </style>
 </asp:Content>
@@ -16,40 +32,38 @@
 &nbsp;|&nbsp;&nbsp;&nbsp;
                 <table style="width:100%;">
                     <tr>
-                        <td>&nbsp;</td>
-                        <td class="auto-style1">Add a Professor using the fields below</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
+                        <td class="auto-style2" colspan="2">Add a Professor using the fields below</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td class="auto-style1">Professor Name:&nbsp;
+                        <td class="auto-style4"></td>
+                        <td class="auto-style3"></td>
+                        <td class="auto-style3"></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style6">Professor Name:</td>
+                        <td class="auto-style1">
                             <asp:TextBox ID="txtProfName" runat="server"></asp:TextBox>
 &nbsp;<asp:RequiredFieldValidator ID="rfvProfName" runat="server" ControlToValidate="txtProfName" ErrorMessage="Name is required"></asp:RequiredFieldValidator>
                         </td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
-                        <td class="auto-style1">Department:
-                            <asp:TextBox ID="txtDpt" runat="server"></asp:TextBox>
+                        <td class="auto-style6">Department:</td>
+                        <td class="auto-style1">&nbsp;<asp:TextBox ID="txtDpt" runat="server"></asp:TextBox>
 &nbsp;<asp:RequiredFieldValidator ID="rfvDpt" runat="server" ControlToValidate="txtDpt" ErrorMessage="Department is required"></asp:RequiredFieldValidator>
                         </td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
                         <td class="auto-style1">
                             <asp:Button ID="btnSubmit" runat="server" OnClick="btnSubmit_Click" Text="Submit" />
                         </td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td>&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
                         <td class="auto-style1">
                             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [Professors] WHERE [ProfessorID] = ?" InsertCommand="INSERT INTO [Professors] ([ProfessorID], [ProfessorName], [Department], [Rating]) VALUES (?, ?, ?, ?)" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [Professors]" UpdateCommand="UPDATE [Professors] SET [ProfessorName] = ?, [Department] = ?, [Rating] = ? WHERE [ProfessorID] = ?" OnSelecting="SqlDataSource1_Selecting">
                                 <DeleteParameters>
