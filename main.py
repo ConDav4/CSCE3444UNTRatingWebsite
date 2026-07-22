@@ -14,7 +14,7 @@ print(data)
 f.seek(0)
 json.dump(data,f)
 from flask import abort, redirect, url_for
-m=hashlib.sha256()
+
 
 @app.route("/")
 
@@ -54,6 +54,7 @@ def makeaccountpage():
 '''
 @app.route('/createaccount')
 def makeaccount():
+    m=hashlib.sha256()
     tempf=open("users.json","r+")
     tempdata=json.load(tempf)
 
@@ -80,13 +81,20 @@ def cleart():
 
 @app.route('/login')
 def login():
+    m=hashlib.sha256()
+    tempf=open("users.json","r+")
+    tempdata=json.load(tempf)
     user=request.args.get('username')
     password=request.args.get('password')
     m.update((user+"buffer"+password).encode('utf-8'))
     yum=str(m.digest())
-    resp = make_response(redirect(url_for('root')))
-    resp.set_cookie('accounttoken', yum)
-    return resp
+    if yum in tempdata["accounts"].keys():
+            
+        resp = make_response(redirect(url_for('root')))
+        resp.set_cookie('accounttoken', yum)
+        return resp
+    else:
+        return "<dialog open="">login failed! <a href='/'>go back</a> "+str(tempdata)+"   "+yum+"</dialog> "
 
 
 
