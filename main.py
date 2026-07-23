@@ -8,11 +8,7 @@ from flask import request
 from flask import make_response
 import hashlib
 from flask import make_response
-f=open("professors.json","r+")
-data=json.load(f)
-print(data)
-f.seek(0)
-json.dump(data,f)
+
 from flask import abort, redirect, url_for
 
 
@@ -55,7 +51,7 @@ def makeaccountpage():
 @app.route('/createaccount')
 def makeaccount():
     m=hashlib.sha256()
-    tempf=open("users.json","r+")
+    tempf=open("users.json","r")
     tempdata=json.load(tempf)
 
     user=request.args.get('username')
@@ -66,7 +62,12 @@ def makeaccount():
         yum=str(m.digest())
         tempdata["accounts"][yum]={"name":user}
         tempf.seek(0)
-        json.dump(tempdata,tempf)
+        towrite=open("users.json","w")
+        wstring=json.dumps(tempdata)
+
+
+        towrite.write(str(wstring))
+        towrite.close()
         return "<dialog open="">succesfully created!<a href='/'>go back</a></dialog>"
     else:
         return "<dialog open="">user already exists! <a href='/'>go back</a></dialog>"
@@ -82,7 +83,9 @@ def cleart():
 @app.route('/login')
 def login():
     m=hashlib.sha256()
-    tempf=open("users.json","r+")
+    tempf=open("users.json","r")
+
+  
     tempdata=json.load(tempf)
     user=request.args.get('username')
     password=request.args.get('password')
@@ -94,7 +97,7 @@ def login():
         resp.set_cookie('accounttoken', yum)
         return resp
     else:
-        return "<dialog open="">login failed! <a href='/'>go back</a> "+str(tempdata)+"   "+yum+"</dialog> "
+        return "<dialog open="">login failed! <a href='/'>go back</a> "+"   "+"</dialog> "
 
 
 
@@ -102,18 +105,21 @@ def login():
 @app.post('/professors/add')
 def adding():
     professor = request.args.get('qu')
+    data=open("users.json","r")
+    data=json.load(data)
     if professor in data.keys():
         return "this professor already exists!"
     else:
         data[professor]=[]
         print(data)
-        f.seek(0)
-        json.dump(data,f)
-        temp=open("professors.json","r+")
-        print(temp)
-        temp.seek(0)
-        json.dump(data,temp)
-        return "succesfully added!"
+
+        towrite=open("professors.json","w")
+        wstring=json.dumps(data)
+
+        towrite.write(wstring)
+        towrite.close()
+
+        return "<p>succesfully added!</p><p><a href=/professors/profile/"+professor+">See the new profile?</a></p>"
 
 
 
@@ -125,7 +131,8 @@ def searched():
 @app.route('/professors/profile/<professor>')
 def viewprof(professor):
     caninteract="accounttoken" in request.cookies and request.cookies.get("accounttoken")!="0"
-    f=open("professors.json","r+")
+    f=open("professors.json","r")
+
     data=json.load(f)
     html="<p></p><p> </p>"
     html+=""
@@ -168,14 +175,16 @@ def addreview(profname):
     review = request.args.get('review')
     rating = request.args.get('rating')
     if store in data.keys():
-        tempf=open("professors.json","r+")
+        tempf=open("professors.json","r")
+        towrite=open("professors.json","w")
         tempd=json.load(tempf)
         tempd[store].append(review)
         print(tempf)
         print(tempd)
- 
-        tempf.seek(0)
-        json.dump(tempd,tempf)
+        wstring=json.dumps(tempd)
+
+        towrite.write(wstring)
+        towrite.close()
         return redirect(url_for("viewprof",professor=store))
     else:
         return "professor not found"
