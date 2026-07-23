@@ -150,6 +150,7 @@ def viewprof(professor):
     <input type="text" id="query" name="rate" placeholder="rating (put a number out of five)"><hr>
    <input type="submit" value="Add!">
 </form>
+<p><a href='/'>go back</a></p>
 '''
 
         return f'<p> {escape(professor)}</p>'+html
