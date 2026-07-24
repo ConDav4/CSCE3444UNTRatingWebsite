@@ -1,0 +1,174 @@
+<!-- This is a test-->
+<script setup>
+    import {ref, onMounted, computed} from 'vue';
+    import { addProfessor, getProfessors, searchProfessor } from '@/api/professors';
+    import store from '@/store';
+
+    const fieldsDflt = [
+    {
+        key: 'name',
+        sortable: true,
+    },
+    {
+        key: 'email',
+        sortable: true,
+    },
+    {
+        key: 'department',
+        sortable: true,
+    },
+    {
+        key: 'ratings',
+        sortable: true,
+        class:"min"
+    }
+]
+
+    const professors = ref([]);
+    const professorSearchResults = ref();
+    const professor = ref({ ratings:{}, comments:{} });
+    const showProfessorAdd = ref(false);
+    const filter = ref();
+    const searchStr = ref();
+
+    const user = computed(() => store.state.user)
+    const fields = computed(()=>{
+        if(user?.guest){
+            return fieldsDflt;
+        }
+        return [...fieldsDflt,
+            {
+                key: 'actions',
+                sortable: false,
+                class:"min"
+            }]
+    })
+
+    const onProfessorAdd = ()=>{
+        addProfessor(professor.value).then((response)=>{
+            alert('Professor has been added successfully');
+            refresh();
+        })
+    }
+
+    const startProfessorUpdate = (professorIn)=>{
+        const prof = professorIn || JSON.parse(JSON.stringify({ ratings:{}, comments:{} }));
+        professor.value = prof;
+        showProfessorAdd.value = true;
+    }
+
+    const onProfessorSearch = ()=>{
+        searchProfessor(searchStr.value).then((response)=>{
+            professorSearchResults.value = Object.values(response)
+                .map((professor)=>{
+                    professor.rating=avgRatings(professor?.ratings);
+                    return professor
+                });
+        })
+    }
+
+    const refresh = ()=>{
+        getProfessors().then((response)=>{
+            professors.value = Object.values(response)
+                .map((professor)=>{
+                    professor.rating=avgRatings(professor?.ratings);
+                    return professor
+                });
+        })
+    }
+
+    const avgRatings = (ratings)=>{
+        if(ratings){
+            const values = Object.values(ratings);
+            if( values ){
+                return values.reduce((sum, value) => sum + value, 0) / values.length;
+            }
+        }
+        return 0;
+    }
+
+    onMounted(()=>{
+        refresh();
+    })
+</script>
+
+<template>
+    <div class="p-3">
+        <div>
+            <div class="d-flex flex-column my-2 mt-4">
+                <h5 class="border-bottom pb-2 mb-3">Professor Search</h5>
+                <div class="d-flex flex-column flex-fill gap-3 rounded">
+                    <div class="d-flex gap-3">
+                        <BFormInput class="flex-fill" v-model="searchStr" placeholder="Enter professors name"/>
+                        <div class="btn btn-sm btn-primary" @click="onProfessorSearch">Search</div>
+                    </div>
+                    <div v-if="professorSearchResults?.length==0" class="d-flex align-items-center p-2 rounded darker">
+                        <div class="flex-fill">No professors found with that name. {{(!user?.guest)?' Would you like to add one?':''}} </div>
+                        <div class="btn btn-primary" v-if="!user?.guest" @click="startProfessorUpdate()">Add Professor</div>
+                    </div>
+                    <div v-else-if="professorSearchResults?.length" class="darker">
+                        <BTable 
+                            striped
+                            hover
+                            :filter="filter"
+                            :items="professorSearchResults"
+                            :fields="fields"
+                        >
+                            <template v-slot:cell(ratings)="data">
+                                <BFormRating v-model="data.item.rating" no-border size="sm" show-value readonly style="width:100%;min-width:100pt"/>
+                            </template>
+                            <template v-slot:cell(actions)="data">
+                                <div class="btn btn-primary" v-if="!user?.guest">Review</div>
+                            </template>
+                        </BTable>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center my-2 mt-5 border-bottom pb-2">
+                <h5>Professor Listing</h5>
+                <div class="flex-fill">&nbsp;</div>
+                <i class="mdi mdi-filter me-2"></i>
+                <BFormInput class="" style="width:200pt;" v-model="filter" placeholder="Start typing to filter professors"/>
+            </div>
+            <div class="d-flex flex-column flex-fill gap-3 rounded darker">
+                <BTable
+                    striped
+                    hover
+                    :filter="filter"
+                    :items="professors"
+                    :fields="fields"
+                >
+                    <template v-slot:cell(ratings)="data">
+                        <BFormRating v-model="data.item.rating" no-border size="sm" show-value readonly style="width:100%;min-width:100pt"/>
+                    </template>
+                    <template v-slot:cell(actions)="data">
+                        <div class="btn btn-primary"  v-if="!user?.guest" @click="startProfessorUpdate(data.item)">Review</div>
+                    </template>
+                </BTable>
+                </div>
+        </div>
+        <BModal v-model="showProfessorAdd" title="Professor Rating" no-footer>
+            <div class="d-flex align-items-center my-2">
+                <i class="text-muted p-2">To add an new professor review, simply fill in the following information.  
+                    You may add comments and ratings at this time, or wait to come back later.
+                </i>
+            </div>
+            <div class="d-flex flex-column flex-fill gap-3 rounded darker p-3">
+                <BFormInput v-model="professor.name" placeholder="Please enter professor's name"/>
+                <BFormInput v-model="professor.email" placeholder="Please enter professor's email"/>
+                <BFormInput v-model="professor.department" placeholder="Please enter professor's department"/>
+                <BFormRating v-model="professor.ratings[user.username]" class="w-100" no-border size="sm" show-value/>
+                <BFormTextarea v-model="professor.comments[user.username]"/>
+
+                <div class="d-flex gap-3 jsutify-content-end">
+                    <div class="flex-fill"></div>
+                    <div class="btn btn-primary" @click="onProfessorAdd">Add</div>
+                </div>
+            </div>
+        </BModal>
+    </div>
+</template>
+
+<style lang="scss" scoped>
+
+</style>
