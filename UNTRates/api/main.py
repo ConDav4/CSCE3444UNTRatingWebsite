@@ -17,18 +17,28 @@ from flask import make_response
 
 #load professor json from file into data
 f=open("professors.json","r")
-data=json.load(f)
+Pdata=json.load(f)
 f.close()
 
 #load courses json from file into data
 f=open("courses.json","r")
-courseData=json.load(f)
+Cdata=json.load(f)
 f.close()
+
+#load courses json from file into data
+f=open("users.json","r")
+Udata=json.load(f)
+f.close()
+
 from flask import abort, redirect, url_for
+
+
+
 
 @app.route("/dialog")
 
 def root():
+
     html='''
     <dialog>hiii</dialog>
 <p></p>
@@ -66,25 +76,28 @@ def makeaccountpage():
 #creates user account from provided user json file
 @app.route('/api/createaccount', methods=['POST']) 
 def makeaccount():
+
+
     m=hashlib.sha256()
     response = {"status":"User already exists"}
-    with open("users.json","r+") as tempf:
-        tempdata=json.load(tempf)
 
-        userFormData = request.form.get("user")
-        userData = json.loads(userFormData)
-        username=userData.get('username')
-        if not(username in tempdata["users"].keys()):
-            password = request.form.get('password')
-            tempdata["users"][username]=userData
-            m.update((username+"buffer"+password).encode('utf-8'))
-            yum=str(m.digest())
-            tempdata["accounts"][yum]={"name":username}
-            tempf.seek(0)
-            json.dump(tempdata,tempf)
-            response = userData
-        else:
-            response = {"status":"User already exists"}
+    userFormData = request.form.get("user")
+    userData = json.loads(userFormData)
+    username=userData.get('username')
+    if not(username in Udata["users"].keys()):
+        password = request.form.get('password')
+        Udata["users"][username]=userData
+        m.update((username+"buffer"+password).encode('utf-8'))
+        yum=str(m.digest())
+        Udata["accounts"][yum]={"name":username}
+        towrite=open("users.json","w")
+        wstring=json.dumps(Udata)
+
+        towrite.write(wstring)
+        towrite.close()
+        response = userData
+    else:
+        response = {"status":"User already exists"}
     return jsonify(response)
        
 
@@ -98,18 +111,16 @@ def cleart():
 @app.route('/api/login', methods=['POST'])
 def login():
     m=hashlib.sha256()
-    with open("users.json","r+") as tempf:
-        tempdata=json.load(tempf)
-        user=request.form.get('username')
-        password=request.form.get('password')
-        m.update((user+"buffer"+password).encode('utf-8'))
+    user=request.form.get('username')
+    password=request.form.get('password')
+    m.update((user+"buffer"+password).encode('utf-8'))
 #returns validated user
     yum=str(m.digest())
-    if yum in tempdata["accounts"].keys(): 
+    if yum in Udata["accounts"].keys(): 
         resp = make_response('Login success')
         resp.set_cookie('accounttoken', yum)
-        assocUsername = tempdata["accounts"][yum]["name"]
-        return jsonify(tempdata["users"][assocUsername])
+        assocUsername = Udata["accounts"][yum]["name"]
+        return jsonify(Udata["users"][assocUsername])
     else:
         return jsonify({status:'failed to login'}), 401
 
@@ -120,16 +131,18 @@ def adding():
     professor = request.get_json()
     name = professor.get('name')
     profData = jsonify(professor)
-    if name in data.keys():
+
+    if name in Pdata.keys():
         return "this professor already exists!"
     else:
-        data[name]=professor
-        print(data)
-        temp=open("professors.json","r+")
-        print(temp)
-        temp.seek(0)
-        json.dump(data,temp)
-        temp.close()
+        Pdata[name]=professor
+        print(Pdata)
+
+        towrite=open("professors.json","w")
+        wstring=json.dumps(Pdata)
+        towrite.write(wstring)
+        towrite.close()
+
         return profData
 
 
@@ -142,19 +155,15 @@ def searched():
 #returns json of all professors
 @app.route('/api/professors')
 def getProfessors():
-    f=open("professors.json","r+")
-    data=json.load(f)
-    f.close()
-    return jsonify(data)
+
+    return jsonify(Pdata)
 
 @app.route('/api/professors/profile/<professor>')
 def viewprof(professor):
     caninteract="accounttoken" in request.cookies and request.cookies.get("accounttoken")!="0"
-    f=open("professors.json","r+")
-    data=json.load(f)
-    f.close()
-    if professor in data.keys():
-        return jsonify([data[professor]])
+
+    if professor in Pdata.keys():
+        return jsonify([Pdata[professor]])
     return jsonify([])
 
 
@@ -165,17 +174,16 @@ def addreview(profname):
     user=review.get('user')
     ratings=review.get('ratings')
     professor=profname
-    if professor in data.keys():
-        tempf=open("professors.json","r+")
-        tempd=json.load(tempf)
-        tempd[professor]["ratings"][user]=ratings
-        print(tempf)
-        print(tempd)
- 
-        tempf.seek(0)
-        json.dump(tempd,tempf)
-        tempf.close()
-        return jsonify(tempd[professor])
+    if professor in Pdata.keys():
+        Pdata[professor]["ratings"][user]=ratings
+
+        towrite=open("professors.json","w")
+        wstring=json.dumps(Pdata)
+
+        towrite.write(wstring)
+        towrite.close()
+
+        return jsonify(Pdata[professor])
     else:
         return jsonify({status:"Unable to update rating"})
 
@@ -183,19 +191,21 @@ def addreview(profname):
 
 @app.route('/api/courses/add', methods=['POST'])
 def addingCourse():
+
     course = request.get_json()
     name = course.get('name')
-    cData = jsonify(course)
-    if name in courseData.keys():
+    tcData = jsonify(course)
+    if name in Cdata.keys():
         return "this course already exists!"
     else:
-        courseData[name]=course
-        print(courseData)
-        temp=open("courses.json","r+")
-        print(temp)
-        temp.seek(0)
-        json.dump(courseData,temp)
-        return cData
+        Cdata[name]=course
+
+        towrite=open("courses.json","w")
+        wstring=json.dumps(Cdata)
+
+        towrite.write(wstring)
+        towrite.close()
+        return tcData
 
 
 
@@ -206,19 +216,16 @@ def courseSearched():
 
 @app.route('/api/courses')
 def getCourses():
-    f=open("courses.json","r+")
-    courseData=json.load(f)
-    f.close()
-    return jsonify(courseData)
+
+    return jsonify(Cdata)
 
 @app.route('/api/courses/profile/<course>')
 def viewCourse(course):
     caninteract="accounttoken" in request.cookies and request.cookies.get("accounttoken")!="0"
-    f=open("courses.json","r+")
-    courseData=json.load(f)
+
     f.close()
-    if course in courseData.keys():
-        return jsonify([courseData[course]])
+    if course in Cdata.keys():
+        return jsonify([Cdata[course]])
     return jsonify([])
 
 
@@ -231,18 +238,16 @@ def addCourseReview(coursename):
     ratings=review.get('ratings')
     print(ratings)
     course=coursename
-    if course in courseData.keys():
-        tempf=open("courses.json","r+")
-        tempd=json.load(tempf)
-        print(tempd[course])
-        tempd[course]["ratings"][user]=ratings
-        print(tempf)
-        print(tempd)
- 
-        tempf.seek(0)
-        json.dump(tempd,tempf)
-        tempf.close()
-        return jsonify(tempd[course])
+    if course in Cdata.keys():
+
+        Cdata[course]["ratings"][user]=ratings
+
+        towrite=open("courses.json","w")
+        wstring=json.dumps(Cdata)
+
+        towrite.write(wstring)
+        towrite.close()
+        return jsonify(Cdata[course])
     else:
         return jsonify({status:"Unable to update rating"})
 
