@@ -65,7 +65,7 @@
 <template>
     <BNavbar
     toggleable="lg"
-    class="header text-dark"
+    class="header" :class="mode"
     >
     <BNavbarBrand href="#navbar-overview"><BImg :src="untLogo" fluid alt="Local logo" style="height: 35px;"/></BNavbarBrand>
     <BNavbarToggle target="nav-collapse" />
@@ -95,10 +95,10 @@
             <BDropdownItem>RU</BDropdownItem>
             <BDropdownItem>FA</BDropdownItem>
         </BNavItemDropdown>
-        <BNavItemDropdown right toggle-class="rounded bg-white mx-3">
+        <BNavItemDropdown right toggle-class="rounded bg-white text-black mx-3">
             <!-- Using 'button-content' slot -->
             <template #button-content>
-            <span class="rounded bg-white py-2 px-3">
+            <span class="rounded bg-white text-black py-2 px-3">
                 <em><i class="mdi mdi-account-circle-outline me-2"></i>
                 <span class="fw-bold text-capitalize">{{user?.username || 'Not Logged In'}}</span></em>
             </span>
@@ -136,5 +136,8 @@
     .header{
         background-color:#B9DCD2;
         color:#eee;
+        &.dark{
+            background-color: #006747;
+        }
     }
 </style>

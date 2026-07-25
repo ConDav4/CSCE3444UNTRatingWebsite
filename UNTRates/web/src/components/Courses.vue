@@ -134,7 +134,7 @@
                             show-empty
                         >
                             <template v-slot:cell(ratings)="data">
-                                <BFormRating v-model="data.item.rating" no-border size="sm" show-value readonly style="width:100%;min-width:100pt"/>
+                                <BFormRating v-model="data.item.rating" no-border size="sm" show-value readonly color="rgb(64, 192, 128)" style="width:100%;min-width:100pt"/>
                             </template>
                             <template v-slot:cell(actions)="data">
                                 <div class="btn btn-primary" v-if="!user?.guest" @click="selectCourse(data.item)">Review</div>
@@ -165,7 +165,7 @@
                     show-empty
                 >
                     <template v-slot:cell(ratings)="data">
-                        <BFormRating v-model="data.item.rating" no-border size="sm" show-value readonly style="width:100%;min-width:100pt"/>
+                        <BFormRating v-model="data.item.rating" no-border size="sm" show-value readonly color="rgb(64, 192, 128)" style="width:100%;min-width:100pt"/>
                     </template>
                     <template v-slot:cell(actions)="data">
                         <div class="btn btn-primary"  v-if="!user?.guest" @click="selectCourse(data.item)">Review</div>
@@ -199,7 +199,7 @@
                             <div class="user-icon"><i class="mdi mdi-account"></i></div>
                             <div class="flex-fill mx-3 fw-bold text-capitalize">{{ user }}</div>
                             <div>
-                                <BFormRating v-model="rating.rating" class="d-flex align-items-center" no-border size="sm" show-value readonly style="width:100%;min-width:100pt"/>
+                                <BFormRating v-model="rating.rating" class="d-flex align-items-center" no-border size="sm" show-value readonly color="rgb(64, 192, 128)" style="width:100%;min-width:100pt"/>
                             </div>
                         </div>
                         <div class="border rounded p-2 mt-2" style="background-color:var(--bs-body-bg)">
@@ -220,7 +220,7 @@
                 <BFormInput v-model="course.name" placeholder="Please enter course's name"/>
                 <BFormInput v-model="course.degree" placeholder="Please enter course's degree"/>
                 <BFormInput v-model="course.department" placeholder="Please enter course's department"/>
-                <BFormRating v-model="course.rating" class="w-100" no-border size="sm" show-value/>
+                <BFormRating v-model="course.rating" class="w-100" no-border size="sm" color="rgb(64, 192, 128)" show-value/>
                 <BFormTextarea v-model="course.comment"/>
 
                 <div class="d-flex gap-3 jsutify-content-end">
